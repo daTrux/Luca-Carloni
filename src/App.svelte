@@ -5,6 +5,9 @@
   import About from "./About/About.svelte";
   import Structure from "./Structure/Structure.svelte";
   import "@splidejs/svelte-splide/css/splide.min.css";
+  import Fab from './ContactButton/ContactButton.svelte';
+
+
 </script>
 
 <div id="navbar">
@@ -14,7 +17,7 @@
   <Home />
   <About />
   <Structure />
-  <Contacts />
+  <Fab />
 </div>
 
 <style>
