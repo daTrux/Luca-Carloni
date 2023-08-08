@@ -4,17 +4,15 @@
 </script>
 
 <section id="home">
-  <div class="img-div">
-    <img src={logo}>
-  </div>
+  <h1 class="title">Luca Carloni</h1>
   <div class="img-div profile">
     <img src={profile}>
   </div>
-  <h1 class="title">Lorem ipsum dolor sit amet</h1>
+  <h2 class="description">Lorem ipsum dolor sit amet</h2>
 </section>
 
 <style>
- 
+ @import url('https://fonts.cdnfonts.com/css/audrey');
  
   #home {
     display: flex;
@@ -38,5 +36,10 @@
     }
     img {
         max-width: 100%;
+    }
+    .title {
+      font-size: 4em;
+      font-family: 'Audrey';
+      font-weight: 400;
     }
 </style>

@@ -1,8 +1,16 @@
 <script>
   import Fa from "svelte-fa";
-  import { faEnvelope, faPhone, faAddressCard, faMinus } from "@fortawesome/free-solid-svg-icons";
+  import {
+    faEnvelope,
+    faPhone,
+    faAddressCard,
+    faMinus,
+    faX,
+  } from "@fortawesome/free-solid-svg-icons";
   import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+  import Dialog from "../Dialog/Dialog.svelte";
 
+  let dialog;
   let isFabOpen = false;
   function toggleFab() {
     isFabOpen = !isFabOpen;
@@ -20,27 +28,37 @@
   function onWhatsappClick() {
     window.open("https://api.whatsapp.com/send?phone=3479183883&text=Hello");
   }
+
+  function closePopup() {
+    dialog.close();
+    localStorage.setItem("isPopupClosed", true);
+  }
 </script>
 
 <div class="fab-container">
+  <Dialog bind:dialog>
+    <div class="icon" on:click={closePopup}>
+      <Fa icon={faX} />
+    </div>
+    <div><p>Clicca qui per contattarmi</p></div>
+  </Dialog>
   <div class="fab {isFabOpen ? 'open' : ''}" on:click={toggleFab}>
     {#if isFabOpen}
-    <Fa icon={faMinus} />
+      <Fa icon={faMinus} />
     {:else}
-    <Fa icon={faAddressCard} />
+      <Fa icon={faAddressCard} />
     {/if}
   </div>
   {#if isFabOpen}
-    <div class="fab"  on:click={onPhoneClick}>
-        <Fa icon={faPhone}   />
+    <div class="fab" on:click={onPhoneClick}>
+      <Fa icon={faPhone} />
     </div>
     <div class="fab" on:click={onWhatsappClick}>
-        <Fa icon={faWhatsapp}  />
+      <Fa icon={faWhatsapp} />
     </div>
     <div class="fab" on:click={onEmail}>
-        <Fa icon={faEnvelope} />
+      <Fa icon={faEnvelope} />
     </div>
-
   {/if}
 </div>
 
@@ -90,5 +108,15 @@
 
   .fab.open .sub-fab {
     transform: scale(1);
+  }
+
+  .icon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
   }
 </style>
