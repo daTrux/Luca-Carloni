@@ -1,31 +1,42 @@
+<script>
+  let logo = "assets/Logo.jpg";
+  let profile = "assets/PT.jpg";
+</script>
+
 <section id="home">
-   
+  <div class="img-div">
+    <img src={logo}>
+  </div>
+  <div class="img-div profile">
+    <img src={profile}>
+  </div>
   <h1 class="title">Lorem ipsum dolor sit amet</h1>
 </section>
 
 <style>
-  .bg {
-    height: 100vh;
-    position: relative;
-    background-image: url("../assets/HomeBG.jpg");
-    background-size: cover;
-    background-position: center;
-    filter: blur(8px);
-  }
-  .title {
-    color: rgba(255, 255, 255 );
-    font-weight: bolder;
-
-    width: 80%;
-    text-align: center;
-    font-size: 3.5rem;
-  }
+ 
+ 
   #home {
     display: flex;
-    justify-content: center;
+    flex-direction: column  ;
+    justify-content: start;
     align-items: center;
     height: 100vh;
-    background-color: #ccc;
+    max-width: 100vw;
+    /* background-color: #ccc; */
   }
-  
+  .img-div {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .img-div.profile {
+      max-width: 50%; 
+    }
+    .img-div.profile img {
+      border-radius: 50%;
+    }
+    img {
+        max-width: 100%;
+    }
 </style>

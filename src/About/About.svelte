@@ -1,10 +1,7 @@
-<script>
-  let src = "assets/imgPT.jpg";
+<script>  
 </script>
 
 <section id="about">
-  <!-- <div class="top-header" /> -->
-  <img {src} alt="Girl in a jacket">
   <h5>Chi sono</h5>
   <h1>Lorem ipsum dolor sit amet</h1>
 
