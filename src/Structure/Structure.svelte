@@ -31,7 +31,7 @@
   </ul>
 </section>
 
-<Carousel />
+
 <section id="structure">
   <h5>La struttura</h5>
   <h1>Scopri Askesis Lab</h1>
@@ -43,7 +43,8 @@
     cardio ed accessori di ultimissima generazione: il tutto in un ambiente
     riservato e molto luminoso.
   </p>
-
+  <Carousel />
+  <br>
   <Youtube id="K4TOrB7at0Y" />
 </section>
 
