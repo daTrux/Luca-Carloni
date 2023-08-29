@@ -31,7 +31,8 @@
     <ul class:show={showMenu}>
       <li><a href="#home" on:click={scrollToSection}>Home</a></li>
       <li><a href="#about" on:click={scrollToSection}>Chi sono</a></li>
-      <li><a href="#structure" on:click={scrollToSection}>Servizi</a></li>
+      <li><a href="#services" on:click={scrollToSection}>Servizi</a></li>
+      <li><a href="#structure" on:click={scrollToSection}>Struttura</a></li>
       <li><a href="#contacts" on:click={scrollToSection}>Contatti</a></li>
       
     </ul>
