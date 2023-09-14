@@ -31,7 +31,7 @@
 
   function closePopup() {
     dialog.close();
-    localStorage.setItem("isPopupClosed", true);
+    // localStorage.setItem("isPopupClosed", true);
   }
 </script>
 

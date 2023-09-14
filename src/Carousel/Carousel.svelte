@@ -1,11 +1,11 @@
 <script>
   import { Splide, SplideSlide } from "@splidejs/svelte-splide";
-  let img1 = "assets/PAL1.jpg";
-  let img2 = "assets/PAL2.jpg";
-  let img3 = "assets/PAL3.jpg";
-  let img4 = "assets/PAL4.jpg";
-  let img5 = "assets/PAL5.jpg";
-  let img6 = "assets/PAL6.jpg";
+  let img4 = "assets/PAL1.jpg";
+  let img1 = "assets/PAL2.jpg";
+  let img6 = "assets/PAL3.jpg";
+  let img5 = "assets/PAL4.jpg";
+  let img3 = "assets/PAL5.jpg";
+  let img2 = "assets/PAL6.jpg";
 </script>
 
 <Splide aria-label="My Favorite Images"  options={ {

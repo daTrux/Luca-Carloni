@@ -30,6 +30,7 @@
     justify-content: start;
     align-items: center;
     max-width: 100vw;
+    border-bottom: 0;
     /* background-color: #ccc; */
   }
   .img-div {
@@ -47,8 +48,9 @@
     max-width: 100%;
   }
   .title {
-    font-size: 4em;
+    font-size: 3.5em;
     font-family: "Audrey";
     font-weight: 400;
   }
+ 
 </style>

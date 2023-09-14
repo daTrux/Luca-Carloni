@@ -54,6 +54,7 @@
     margin-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    border-bottom: 0;
   }
   #services {
     margin-left: 1rem;
