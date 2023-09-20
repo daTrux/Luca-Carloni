@@ -6,7 +6,7 @@
 <section id="home">
   <h1 class="title">Luca Carloni</h1>
   <div class="img-div profile">
-    <img src={profile} />
+    <img src={profile} alt="Immagine di Luca Carloni" />
   </div>
   <!-- <h2 class="description">
     LEZIONI DI PERSONAL TRAINING INDIVIDUALI E DI COPPIA

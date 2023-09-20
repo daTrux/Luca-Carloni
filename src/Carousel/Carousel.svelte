@@ -15,32 +15,32 @@
   } }>
   <SplideSlide>
     <div class="img-div">
-        <img src={img1}>
+        <img src={img1} alt="Immagine della palestra" />
     </div>
   </SplideSlide>
   <SplideSlide>
     <div class="img-div">
-        <img src={img2}>
+        <img src={img2} alt="Immagine della palestra" />
     </div>
   </SplideSlide>
   <SplideSlide>
     <div class="img-div">
-        <img src={img3}>
+        <img src={img3} alt="Immagine della palestra"/>
     </div>
   </SplideSlide>
   <SplideSlide>
     <div class="img-div">
-        <img src={img4}>
+        <img src={img4} alt="Immagine della palestra" />
     </div>
   </SplideSlide>
   <SplideSlide>
     <div class="img-div">
-        <img src={img5}>
+        <img src={img5} alt="Immagine della palestra" />
     </div>
   </SplideSlide>
   <SplideSlide>
     <div class="img-div">
-        <img src={img6}>
+        <img src={img6} alt="Immagine della palestra"/>
     </div>
   </SplideSlide>
 </Splide>
